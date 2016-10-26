@@ -1,0 +1,198 @@
+body 		{ 	color: #330000;
+				background-color: #FFFFFF;
+				font-family: Verdana, Arial, sans-serif;
+				background-image: url(images/background.jpg);}
+				
+main		{		padding-top: 10px;
+				padding-bottom: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-left: 150px;
+				background-color: #BCBAB8;
+				color: #000000;
+				overflow: auto;}
+		
+header 		{	background-color: #807CEF;
+				background-image: url(images/logo.png);
+				color: #000000;	
+				height: 100px;
+				background-position: center;
+				background-repeat: no-repeat;
+				border-radius: 10px 10px 0px 0px;}
+			
+h1			{	margin: 0;
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;}
+
+h2			{	text-transform: uppercase;
+				background-color: #A0CFFF;
+				color: #663300;
+				font-size: 1.2em;
+				border-bottom: 1px solid #000000;
+				padding: 5px 0 0 5px;
+				margin-right: 20px;
+				clear: left;}
+				
+.details	{	padding-left: 20%;
+				padding-right: 20%;
+				overflow: auto;}
+
+nav			{	text-align: center;
+				float: left;
+				width: 100px;
+				font-weight: bold;
+				padding-top: 10px;}
+				
+nav a 		{	text-decoration: none;
+				padding-bottom: 15px;}
+				
+nav a:link	{	color: #807F7E;}
+
+nav a:visited	{	color: #807F7E;}
+
+nav a:hover	{	color: #330000;}
+
+nav ul		{	list-style-type: none;}
+
+img			{	border-style: none;}
+
+label		{		float:	left;
+				text-align: right;
+				width: 8em;
+				padding-right: 10px;}
+				
+input, textarea	{	display: block;
+				margin-bottom: 1em;}
+					
+#mySubmit	{	margin-left: 12em;}
+
+table		{		margin: auto;
+				width: 90%;
+				border-spacing: 0;
+				background-color: #FFFFFF;}
+
+td, th		{	padding: 10px;}
+				
+.altrow		{	background-color: #A0A3C0;}
+
+.floatright	{	float: right;
+				padding-left: 40px;
+				padding-right: 20px;
+				padding-bottom: 10px;}
+				
+.floatleft	{	float: left;
+				padding-right: 20px;
+				padding-bottom: 20px;}
+
+footer		{	background-color: #807CEF;
+				color: #000000;
+				font-size: .60em;
+				font-style: italic;
+				text-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				clear: both;
+				border-radius: 0px 0px 10px 10px;}
+				
+footer a:link{	color: #ffffcc;}
+
+footer a:visited	{	color: #f2eab7;}
+
+footer a:hover	{	color: #330000;}
+
+#mobile			{	display: none;}
+
+#desktop		{	display: inline;}
+			
+#wrapper 	{	width: 80%;
+				background-color: #FFFFFF;
+				min-width: 700px;
+				max-width: 1024px;
+				box-shadow: 5px 5px 5px #828282;
+				margin-right: auto;
+				margin-left: auto;
+				border-radius: 10px;}
+				
+.highlight img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+.highlight:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.5;
+}
+				
+header, nave, main, footer{display: block;}
+
+@media only screen and (max-width: 1000px) {
+	body		{	margin: 0;
+					background-image: none;}
+	
+	#wrapper	{	width: auto;
+					min-width: 0;
+					margin: 0;
+					box-shadow: none;}
+					
+	header		{	background-image: url(images/logomobile.png);
+					background-position: center;
+					background-repeat: no-repeat;
+					height: 80px;}
+	
+	nav			{	float: none;
+					width: auto;
+					padding-top: 0;
+					margin-top: 0;}
+					
+	nav li		{	display: inline-block;}
+	
+	nav a		{	padding: 1em;
+					font-size: 1.3em;
+					width: 8em;
+					font-weight: bold;
+					border-style: none;}
+					
+	nav ul		{	padding: 0;
+					margin: 0;}
+					
+	main		{	padding: 2em;
+					margin: 0;
+					font-size: 90%;}
+}
+
+@media only screen and (max-width: 800px) {
+	nav			{	float: none;
+					width: auto;
+					padding-top: 0;
+					margin-top: 0;}
+
+	nav a		{	padding: 0.2em;
+					font-size: 1.3em;
+					width: auto;
+					font-weight: bold;
+					border-bottom: #330000 1px solid;
+					display: block;}
+
+	nav li		{	display: block;}
+	
+	h2			{	padding-top: 0.5em;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0.5em;
+					margin-right: 0.5em;}
+	
+	.details	{	padding-left: 0;
+					padding-right: 0;}
+					
+	.floatright	{	display: none;}
+	
+	.floatleft	{	padding-left: 0.5em;
+					padding-right: 0.5em;}
+					
+	#mobile		{	display: inline;}
+
+	#desktop	{	display: none;}
+}
